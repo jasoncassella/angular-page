@@ -1,31 +1,16 @@
-<div class="main">
-  <header class="header">
-    <ul class="menu" #menu>
-      <li class="menu__item">
-        <a class="menu__link">Home</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link">About Us</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link">How it Works</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link">Benefits</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link">Testimonials</a>
-      </li>
-    </ul>
-    <ul class="menu menu-right" #menuSecond>
-      <li class="menu__item">
-        <a class="menu__link">Blog</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link">FAQ</a>
-      </li>
-    </ul>
+  <header>
+    <div class="container">
+      <a href="#" routerLink="/" class="logo">Home</a>
+      <nav>
+        <ul>
+          <li><a href="#" routerLink="/">About Us</a></li>
+          <li><a href="#" routerLink="/list">How it Works</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+
+  <div class="main">
   <section class="first-section">
     <div class="info">
       <h1 class="heading-1">
@@ -80,4 +65,8 @@
     </div>
 
   </section>
+</div>
+
+<div class="container">
+  <router-outlet></router-outlet>
 </div>

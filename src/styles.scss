@@ -1,24 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  box-sizing: inherit;
-  position: relative;
-  background-color: #fafafa;
-  overflow-y: scroll;
-  overflow-x: hidden;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    font-family: 'Nunito', 'sans-serif';
+    font-size: 18px;
+    background: gray;
+    padding: 1em 0;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    a.logo {
+        font-weight: bold;
+    }
+
+    nav {
+        float: right;
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            display: flex;
+
+            li a {
+                padding: 1em;
+
+                &:hover {
+                    background: darken(gray, 10%);
+                }
+            }
+        }
+    }
+}
+
+h1 {
+    margin-top: 2em;
+}
+
 
 .main {
   display: grid;
@@ -31,15 +64,6 @@ body {
   grid-template-rows: min-content calc(100vh - 120px) 100vh;
 }
 
-.header {
-  border-right: 1px solid #f0f0f0;
-  border-left: 1px solid #f0f0f0;
-  grid-column: center-start / center-end;
-  grid-row: 1 / 2;
-  display: grid;
-  height: 120px;
-  grid-template-columns: repeat(3, 1fr);
-}
 
 .first-section {
   border-right: 1px solid #f0f0f0;
