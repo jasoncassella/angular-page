@@ -1,15 +1,16 @@
-<header>
-  <div class="container">
-    <a href="#" routerLink="/" class="logo">Home</a>
-    <nav>
-      <ul>
-        <li><a href="#" routerLink="/about">About Us</a></li>
-        <li><a href="#" routerLink="/about">How it Works</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  <header>
+    <div class="container">
+      <a routerLink="/" routerLinkActive="active" class="logo">Home</a>
+      <nav>
+        <ul>
+          <li><a href="#" routerLink="/about" routerLinkActive="active">About Us</a></li>
+          <li><a href="#" routerLink="/new" routerLinkActive="active">New</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<div class="container">
-  <router-outlet></router-outlet>
-</div>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+  
